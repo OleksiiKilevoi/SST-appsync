@@ -33,8 +33,11 @@ export function api({ stack, app }: StackContext) {
 				// },
 			},
 		},
+		dataSources: {
+			users: "./functions/users/main.go"
+		},
 		resolvers: {
-			'Query users': 'functions/users/main.go',
+			'Query users': "users",
 		},
 	});
 
